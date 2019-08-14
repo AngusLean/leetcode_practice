@@ -12,7 +12,7 @@ import java.util.List;
  * @author dongyang.yu
  * @email dongyang.yu@anxincloud.com
  */
-public class SearchInsertPositionTest {
+public class Array_35_SearchInsertPositionTest {
     private static List<SearchInsertPositionTestData> testData;
 
     static {
@@ -53,7 +53,7 @@ public class SearchInsertPositionTest {
     @Test
     public void searchInsert() {
         testData.forEach(row -> {
-            Assert.assertEquals(SearchInsertPosition.searchInsert(row.getArr(), row.getTarget()), row.getAnswer());
+            Assert.assertEquals(Array_35_SearchInsertPosition.searchInsert(row.getArr(), row.getTarget()), row.getAnswer());
         });
     }
 

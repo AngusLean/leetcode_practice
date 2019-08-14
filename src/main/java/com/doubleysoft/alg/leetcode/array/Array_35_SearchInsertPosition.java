@@ -9,8 +9,11 @@ package com.doubleysoft.alg.leetcode.array;
  * <p>
  * Input: [1,3,5,6], 5
  * Output: 2
+ *
+ * @see <a href="https://leetcode.com/problems/search-insert-position/">35. Search Insert Position</a>
+ *
  */
-public class SearchInsertPosition {
+public class Array_35_SearchInsertPosition {
     public static int searchInsert(int[] nums, int target) {
         int len = nums.length;
         if (len == 0) {
