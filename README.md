@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/AngusLean/leetcode_practice.svg?branch=master)](https://travis-ci.org/AngusLean/leetcode_practice)
 ## 简介
 `LeetCode`算法练习答案. 本Repo不一定包含最全的题解, 仅仅是个人的刷题记录而已.
 很多题限于个人水平问题可能有`Bug`或者不是最优解,欢迎提出来.
