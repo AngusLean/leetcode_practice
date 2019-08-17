@@ -10,22 +10,22 @@ import java.util.List;
  * @author dongyang.yu
  * @email dongyang.yu@anxincloud.com
  */
-public class List_01_AddTwoNumbersTest {
-    private static List<List<List_01_AddTwoNumbers.ListNode>> testDatas;
+public class List_02_AddTwoNumbersTest {
+    private static List<List<List_02_AddTwoNumbers.ListNode>> testDatas;
 
     static {
-        testDatas = new ArrayList<List<List_01_AddTwoNumbers.ListNode>>() {{
-            add(new ArrayList<List_01_AddTwoNumbers.ListNode>() {{
+        testDatas = new ArrayList<List<List_02_AddTwoNumbers.ListNode>>() {{
+            add(new ArrayList<List_02_AddTwoNumbers.ListNode>() {{
                 add(getListNode(new int[]{2, 4, 3}));
                 add(getListNode(new int[]{5, 6, 4}));
                 add(getListNode(new int[]{7, 0, 8}));
             }});
-            add(new ArrayList<List_01_AddTwoNumbers.ListNode>() {{
+            add(new ArrayList<List_02_AddTwoNumbers.ListNode>() {{
                 add(getListNode(new int[]{2, 4, 3}));
                 add(getListNode(new int[]{8}));
                 add(getListNode(new int[]{0, 5, 3}));
             }});
-            add(new ArrayList<List_01_AddTwoNumbers.ListNode>() {{
+            add(new ArrayList<List_02_AddTwoNumbers.ListNode>() {{
                 add(getListNode(new int[]{2, 4, 3}));
                 add(getListNode(new int[]{5, 6, 6}));
                 add(getListNode(new int[]{7, 0, 0, 1}));
@@ -33,11 +33,11 @@ public class List_01_AddTwoNumbersTest {
         }};
     }
 
-    private static List_01_AddTwoNumbers.ListNode getListNode(int[] arr) {
-        List_01_AddTwoNumbers.ListNode listNode = new List_01_AddTwoNumbers.ListNode(arr[0]);
-        List_01_AddTwoNumbers.ListNode tempPtr = listNode;
+    private static List_02_AddTwoNumbers.ListNode getListNode(int[] arr) {
+        List_02_AddTwoNumbers.ListNode listNode = new List_02_AddTwoNumbers.ListNode(arr[0]);
+        List_02_AddTwoNumbers.ListNode tempPtr = listNode;
         for (int i = 1; i < arr.length; i++) {
-            List_01_AddTwoNumbers.ListNode temp = new List_01_AddTwoNumbers.ListNode(arr[i]);
+            List_02_AddTwoNumbers.ListNode temp = new List_02_AddTwoNumbers.ListNode(arr[i]);
             tempPtr.next = temp;
             tempPtr = tempPtr.next;
         }
@@ -47,8 +47,8 @@ public class List_01_AddTwoNumbersTest {
     @Test
     public void addTwoNumbers() {
         testDatas.forEach(row -> {
-            List_01_AddTwoNumbers.ListNode result = List_01_AddTwoNumbers.addTwoNumbers(row.get(0), row.get(1));
-            List_01_AddTwoNumbers.ListNode target = row.get(2);
+            List_02_AddTwoNumbers.ListNode result = List_02_AddTwoNumbers.addTwoNumbers(row.get(0), row.get(1));
+            List_02_AddTwoNumbers.ListNode target = row.get(2);
             while (target != null) {
                 Assert.assertEquals(target.val, result.val);
                 target = target.next;

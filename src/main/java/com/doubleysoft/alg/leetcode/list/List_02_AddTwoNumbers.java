@@ -5,7 +5,7 @@ package com.doubleysoft.alg.leetcode.list;
  * @email dongyang.yu@anxincloud.com
  * @see <a href="https://leetcode.com/problems/add-two-numbers/">2. Add Two Numbers</a>
  */
-public class List_01_AddTwoNumbers {
+public class List_02_AddTwoNumbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null || l2 == null) {
             throw new NullPointerException();
