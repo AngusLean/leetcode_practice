@@ -1,8 +1,6 @@
 package com.doubleysoft.alg.leetcode.strings;
 
 /**
- * @author dongyang.yu
- * @email dongyang.yu@anxincloud.com
  *
  * @see <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">3. longest-substring-without-repeating-characters</a>
  */

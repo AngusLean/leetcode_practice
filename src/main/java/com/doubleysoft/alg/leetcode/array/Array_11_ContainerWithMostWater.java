@@ -1,8 +1,6 @@
 package com.doubleysoft.alg.leetcode.array;
 
 /**
- * @author dongyang.yu
- * @email dongyang.yu@anxincloud.com
  * @see <a href="https://leetcode.com/problems/container-with-most-water/">11. Container With Most Water</a>
  */
 public class Array_11_ContainerWithMostWater {

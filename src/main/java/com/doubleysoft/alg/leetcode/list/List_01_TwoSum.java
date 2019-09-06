@@ -1,7 +1,6 @@
 package com.doubleysoft.alg.leetcode.list;
 
 /**
- * @author dongyang.yu
  * @email dongyang.yu@anxincloud.com
  */
 public class List_01_TwoSum {

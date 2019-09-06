@@ -1,8 +1,6 @@
 package com.doubleysoft.alg.leetcode.list;
 
 /**
- * @author dongyang.yu
- * @email dongyang.yu@anxincloud.com
  * @see <a href="https://leetcode.com/problems/add-two-numbers/">2. Add Two Numbers</a>
  */
 public class List_02_AddTwoNumbers {
