@@ -20,6 +20,7 @@ import java.util.Arrays;
 public class Array_31_NextPermutation {
     public void nextPermutation(int[] nums) {
         int len = nums.length;
+
         if (len == 0 || len == 1) {
             return;
         }
