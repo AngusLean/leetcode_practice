@@ -1,6 +1,4 @@
-package com.doubleysoft.alg.leetcode.array;
-
-import com.doubleysoft.alg.leetcode.Tuple;
+package com.doubleysoft.alg.leetcode;
 
 /**
  * @author cupofish@gmail.com

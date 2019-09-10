@@ -1,6 +1,7 @@
 package com.doubleysoft.alg.leetcode.array;
 
 import com.doubleysoft.alg.leetcode.CommonUtil;
+import com.doubleysoft.alg.leetcode.Tuple3;
 import org.junit.Assert;
 import org.junit.Test;
 

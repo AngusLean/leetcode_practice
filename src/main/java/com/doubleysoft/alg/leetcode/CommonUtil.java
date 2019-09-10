@@ -1,6 +1,8 @@
 package com.doubleysoft.alg.leetcode;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * @author cupofish@gmail.com
@@ -18,5 +20,27 @@ public class CommonUtil {
             result[i++] = integer.intValue();
         }
         return result;
+    }
+
+    public static <T> void testListEqualNoOrders(List<List<T>> data1, List<List<T>> data2, Comparator<T> comparator) {
+        for (List<T> t1 : data1) {
+            boolean notEqual = false;
+            for (T t2 : t1) {
+                for (List<T> d1 : data2) {
+                    for (T d2 : d1) {
+                        if (comparator.compare(t2, d2) != 0) {
+                            notEqual = true;
+                            break;
+                        }
+                    }
+                    if (notEqual) {
+                        break;
+                    }
+                }
+            }
+            if (notEqual) {
+                throw new RuntimeException("list don't equal");
+            }
+        }
     }
 }
