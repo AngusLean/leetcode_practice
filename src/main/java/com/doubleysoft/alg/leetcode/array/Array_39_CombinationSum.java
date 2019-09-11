@@ -28,6 +28,7 @@ public class Array_39_CombinationSum {
             List<Integer> temp = new ArrayList<>(path);
             temp.add(candidates[i]);
             combinationSum(result, temp, i, candidates, target - candidates[i]);
+            System.out.println("+++++++++++++++++");
         }
     }
 }
