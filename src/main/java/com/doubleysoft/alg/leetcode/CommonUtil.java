@@ -43,4 +43,26 @@ public class CommonUtil {
             }
         }
     }
+
+    public static <T> void testListEqualNoOrders(List<List<T>> data1, List<List<T>> data2) {
+        for (List<T> t1 : data1) {
+            boolean notEqual = false;
+            for (T t2 : t1) {
+                for (List<T> d1 : data2) {
+                    for (T d2 : d1) {
+                        if (!t2.equals(d2)) {
+                            notEqual = true;
+                            break;
+                        }
+                    }
+                    if (notEqual) {
+                        break;
+                    }
+                }
+            }
+            if (notEqual) {
+                throw new RuntimeException("list don't equal");
+            }
+        }
+    }
 }
