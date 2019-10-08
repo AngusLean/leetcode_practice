@@ -13,7 +13,9 @@ public class List_234_PalindromeListTest {
     static {
 
 //        int[] arr = new int[]{1,2,2,1};
-        int[] arr = new int[]{1, 2, 2, 1};
+//        int[] arr = new int[]{1, 2, 2, 1};
+//        int[] arr = new int[]{-100, 2, 2, -100};
+        int[] arr = new int[]{1, -129};
         List_234_PalindromeList.ListNode temp = null;
         for (int num : arr) {
             if (temp == null) {

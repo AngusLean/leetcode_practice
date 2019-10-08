@@ -5,17 +5,35 @@ package com.doubleysoft.alg.leetcode.list;
  */
 public class List_234_PalindromeList {
     public static boolean isPalindrome(ListNode head) {
-        int sum = 0;
-        while (head != null) {
-            sum = sum * 10 + head.val;
-            head = head.next;
+        int len=0;
+        ListNode temp = head;
+        while(temp != null){
+            len ++;
+            temp = temp.next;
         }
-        int result = 0, temp = sum;
-        while (temp > 0) {
-            result = result * 10 + temp % 10;
-            temp = temp / 10;
+        if(len == 0){
+            return true;
         }
-        return result == sum;
+        int left=0, right=len-1;
+        while (left < right){
+            if(getValInPos(head, left) == getValInPos(head, right)){
+                left++;
+                right--;
+            }else{
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static int getValInPos(ListNode head, int index){
+        ListNode temp = head;
+        int crt = 0;
+        while (crt != index){
+            temp = temp.next;
+            crt++;
+        }
+        return temp.val;
     }
 
     public static class ListNode {
