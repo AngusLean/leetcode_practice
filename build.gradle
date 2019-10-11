@@ -1,3 +1,5 @@
+import java.util.regex.Pattern
+
 plugins {
     id 'java'
 }
@@ -19,4 +21,28 @@ dependencies {
 }
 ext {
     lombok = 'org.projectlombok:lombok:1.16.18'
+}
+
+task generateReadMeFile(){
+    def readmetpl = file("README_TPL.md")
+    def readme = file("README.md")
+    readme.write("\n")
+    readmetpl.eachLine {line ->
+        readme.append(line+"\n")
+    }
+    fileTree("src/main/java").each{file ->
+        println file.name
+        file.eachLine {line ->
+            if(line.contains("@see <a href=")){
+                def url = line.find(Pattern.compile("\"(.*)\"")).replaceAll("\"","")
+                def name = line.find(Pattern.compile("\\>(.*?)<")).replace("<","")
+                println "题目URL：  "+url+",题目名称 "+name
+                readme.append("|"+name+"|"+url+" |\n")
+            }
+        }
+    }
+}
+
+jar.doLast {
+    generateReadMeFile
 }
