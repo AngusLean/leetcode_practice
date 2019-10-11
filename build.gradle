@@ -35,7 +35,7 @@ task generateReadMeFile(){
         file.eachLine {line ->
             if(line.contains("@see <a href=")){
                 def url = line.find(Pattern.compile("\"(.*)\"")).replaceAll("\"","")
-                def name = line.find(Pattern.compile("\\>(.*?)<")).replace("<","")
+                def name = line.find(Pattern.compile("\\>(.*?)<")).replaceAll("<","").replaceAll(">","")
                 println "题目URL：  "+url+",题目名称 "+name
                 readme.append("|"+name+"|"+url+" |\n")
             }
