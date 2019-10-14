@@ -75,12 +75,4 @@ public class List_21_MergeTwoSortedLists {
         return result;
     }
 
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
 }
