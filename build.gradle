@@ -40,7 +40,7 @@ task generateReadMeFile(){
                 def rootIdx = file.getAbsolutePath().indexOf("src/main/java")
                 def relativePath = file.getAbsolutePath().substring(rootIdx)
                 println "题目URL：  "+url+",题目名称 "+name+", "+githubFilePath+relativePath
-                readme.append("|"+name+"|"+(githubFilePath+relativePath)+"|"+url+" |\n")
+                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|"+url+" |\n")
             }
         }
     }

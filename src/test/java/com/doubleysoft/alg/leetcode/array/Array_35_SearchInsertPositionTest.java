@@ -1,7 +1,7 @@
 package com.doubleysoft.alg.leetcode.array;
 
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -57,7 +57,7 @@ public class Array_35_SearchInsertPositionTest {
         });
     }
 
-    @Getter
+    @Data
     @Builder
     static class SearchInsertPositionTestData {
         private int[] arr;
