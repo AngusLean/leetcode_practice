@@ -1,7 +1,5 @@
 package com.doubleysoft.alg.leetcode.array;
 
-import lombok.Builder;
-import lombok.Data;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,36 +15,12 @@ public class Array_35_SearchInsertPositionTest {
 
     static {
         testData = new ArrayList<SearchInsertPositionTestData>() {{
-            add(SearchInsertPositionTestData.builder()
-                    .arr(new int[]{1, 3, 5, 6})
-                    .target(5)
-                    .answer(2)
-                    .build());
-            add(SearchInsertPositionTestData.builder()
-                    .arr(new int[]{1, 3, 5, 6})
-                    .target(2)
-                    .answer(1)
-                    .build());
-            add(SearchInsertPositionTestData.builder()
-                    .arr(new int[]{1, 3, 5, 6})
-                    .target(7)
-                    .answer(4)
-                    .build());
-            add(SearchInsertPositionTestData.builder()
-                    .arr(new int[]{1, 3, 5, 6})
-                    .target(0)
-                    .answer(0)
-                    .build());
-            add(SearchInsertPositionTestData.builder()
-                    .arr(new int[]{1})
-                    .target(0)
-                    .answer(0)
-                    .build());
-            add(SearchInsertPositionTestData.builder()
-                    .arr(new int[]{1})
-                    .target(2)
-                    .answer(1)
-                    .build());
+            add(new SearchInsertPositionTestData(new int[]{1, 3, 5, 6}, 5, 2));
+            add(new SearchInsertPositionTestData(new int[]{1, 3, 5, 6}, 2, 1));
+            add(new SearchInsertPositionTestData(new int[]{1, 3, 5, 6}, 7, 4));
+            add(new SearchInsertPositionTestData(new int[]{1, 3, 5, 6}, 0, 0));
+            add(new SearchInsertPositionTestData(new int[]{1}, 0, 0));
+            add(new SearchInsertPositionTestData(new int[]{1}, 2, 1));
         }};
     }
 
@@ -57,13 +31,30 @@ public class Array_35_SearchInsertPositionTest {
         });
     }
 
-    @Data
-    @Builder
     static class SearchInsertPositionTestData {
+        public SearchInsertPositionTestData(int[] arr, int target, int answer) {
+            this.arr = arr;
+            this.target = target;
+            this.answer = answer;
+        }
+
         private int[] arr;
 
         private int target;
 
         private int answer;
+
+
+        public int[] getArr() {
+            return arr;
+        }
+
+        public int getTarget() {
+            return target;
+        }
+
+        public int getAnswer() {
+            return answer;
+        }
     }
 }
