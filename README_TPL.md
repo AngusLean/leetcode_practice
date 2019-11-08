@@ -5,7 +5,7 @@
 大部分题目使用`Java`编写, 部分题可能使用其他语言.
 
 ## 使用
-如果想自己在IDE中调试本项目,请下载到自己的IDE,并且打开`Annotation Processor,
+如果想自己在IDE中调试本项目,请下载到自己的IDE,并且打开`Annotation Processor`,
 然后包名`com.doubleysoft.alg.leetcode`下就是标签名, 而类名则由 **标签_题目数字_题目名称**
 组成
 
