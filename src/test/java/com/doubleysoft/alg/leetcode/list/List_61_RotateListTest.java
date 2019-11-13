@@ -14,12 +14,12 @@ public class List_61_RotateListTest {
     @Before
     public void setUp() throws Exception {
         list_61_rotateList = new List_61_RotateList();
-        ListNode source = ListNode.build(1, 2, 3, 4, 5);
-        ListNode target = ListNode.build(4, 5, 1, 2, 3);
 
         testData = Arrays.asList(
                 new Tuple3<>(ListNode.build(1, 2, 3, 4, 5), 2, ListNode.build(4, 5, 1, 2, 3)),
-                new Tuple3<>(ListNode.build(0, 1, 2), 4, ListNode.build(2, 0, 1))
+                new Tuple3<>(ListNode.build(0, 1, 2), 4, ListNode.build(2, 0, 1)),
+                new Tuple3<>(ListNode.build(1), 1, ListNode.build(1)),
+                new Tuple3<>(ListNode.build(1, 2), 2, ListNode.build(1, 2))
         );
     }
 

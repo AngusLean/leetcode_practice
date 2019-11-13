@@ -5,8 +5,17 @@ package com.doubleysoft.alg.leetcode.list;
  */
 public class List_61_RotateList {
     public ListNode rotateRight(ListNode head, int k) {
+        if (k == 0) {
+            return head;
+        }
         int len = lenOfList(head);
+        if (len <= 1) {
+            return head;
+        }
         int newStep = k % len;
+        if (newStep == 0) {
+            return head;
+        }
         int left = len - newStep;
         ListNode tmp = head, newHead = null;
         int i = 1;
