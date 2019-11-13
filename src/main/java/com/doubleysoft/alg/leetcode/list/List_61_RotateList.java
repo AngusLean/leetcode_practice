@@ -1,0 +1,37 @@
+package com.doubleysoft.alg.leetcode.list;
+
+/**
+ * @see <a href="https://leetcode.com/problems/rotate-list/">61. Rotate List</a></a>
+ */
+public class List_61_RotateList {
+    public ListNode rotateRight(ListNode head, int k) {
+        int len = lenOfList(head);
+        int newStep = k % len;
+        int left = len - newStep;
+        ListNode tmp = head, newHead = null;
+        int i = 1;
+        while (i < left) {
+            tmp = tmp.next;
+            i++;
+        }
+        ListNode rotatePoint = tmp;
+        newHead = tmp.next;
+        while (tmp.next != null) {
+            tmp = tmp.next;
+        }
+        tmp.next = head;
+        //特别注意这里的尾指针赋为空不能提前
+        rotatePoint.next = null;
+        return newHead;
+    }
+
+    private int lenOfList(ListNode head) {
+        ListNode tmp = head;
+        int len = 0;
+        while (tmp != null) {
+            len++;
+            tmp = tmp.next;
+        }
+        return len;
+    }
+}
