@@ -9,6 +9,7 @@ package com.doubleysoft.alg.leetcode.list;
  * Input:  1->2->6->3->4->5->6, val = 6
  * Output: 1->2->3->4->5
  *
+ *
  * @see <a href="https://leetcode.com/problems/remove-linked-list-elements/">203. Remove Linked List Elements</a>
  */
 public class List_203_RemoveLinkedListElements {
