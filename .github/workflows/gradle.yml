@@ -23,4 +23,3 @@ jobs:
         ACTION_NAME: "GITHUB ACTION"
         ACTION_BRANCH: "master"
         ACTION_MESSAGE: "Action commit"
-      secrets: [ACTION_SECRET]
