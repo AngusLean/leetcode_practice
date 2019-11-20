@@ -15,3 +15,5 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: ./gradlew generateReadMeFile
+    - name: action-push
+      uses: ludeeus/action-push@0.0.1
