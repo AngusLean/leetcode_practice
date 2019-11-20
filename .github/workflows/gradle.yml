@@ -21,6 +21,6 @@ jobs:
       env:
         ACTION_MAIL: "cupofish@gmail.com"
         ACTION_NAME: "GITHUB ACTION"
-        ACTION_BRANCH: "master"
+        ACTION_BRANCH: master
         ACTION_MESSAGE: "Action commit"
         GITHUB_TOKEN: ${{ secrets.ACTION_SECRET }}
