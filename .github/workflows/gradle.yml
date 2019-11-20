@@ -23,4 +23,4 @@ jobs:
         ACTION_NAME: "GITHUB ACTION"
         ACTION_BRANCH: "master"
         ACTION_MESSAGE: "Action commit"
-        GITHUB_TOKEN: $ACTION_SECRET
+        GITHUB_TOKEN: ${{ secrets.ACTION_SECRET }}
