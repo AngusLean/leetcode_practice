@@ -24,10 +24,10 @@ ext {
 }
 
 task generateReadMeFile(){
-    def readmetpl = file("README_TPL.md")
+    def readMeTpl = file("README_TPL.md")
     def readme = file("README.md")
     readme.write("\n")
-    readmetpl.eachLine {line ->
+    readMeTpl.eachLine {line ->
         readme.append(line+"\n")
     }
     def githubFilePath = "https://github.com/AngusLean/leetcode_practice/blob/master/"
@@ -39,13 +39,9 @@ task generateReadMeFile(){
                 def name = line.find(Pattern.compile("\\>(.*?)<")).replaceAll("<","").replaceAll(">","")
                 def rootIdx = file.getAbsolutePath().indexOf("src/main/java")
                 def relativePath = file.getAbsolutePath().substring(rootIdx)
-                println "题目URL：  "+url+",题目名称 "+name+", "+githubFilePath+relativePath
+//                println "题目URL：  "+url+",题目名称 "+name+", "+githubFilePath+relativePath
                 readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|"+url+" |\n")
             }
         }
     }
-}
-
-jar.doLast {
-    generateReadMeFile
 }
