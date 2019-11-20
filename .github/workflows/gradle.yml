@@ -18,3 +18,9 @@ jobs:
         arguments: generateReadMeFile
     - name: action-push
       uses: ludeeus/action-push@0.0.1
+      env:
+        - ACTION_MAIL: "cupofish@gmail.com"
+        - ACTION_NAME: "GITHUB ACTION"
+        - ACTION_BRANCH: "master"
+        - ACTION_MESSAGE: "Action commit"
+      secrets: [ACTION_SECRET]
