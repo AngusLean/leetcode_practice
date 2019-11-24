@@ -8,7 +8,7 @@ import org.junit.Test;
  * @email dongyang.yu@anxincloud.com
  */
 public class List_234_PalindromeListTest {
-    private static List_234_PalindromeList.ListNode data = null;
+    private static ListNode data = null;
 
     static {
 
@@ -16,13 +16,13 @@ public class List_234_PalindromeListTest {
 //        int[] arr = new int[]{1, 2, 2, 1};
 //        int[] arr = new int[]{-100, 2, 2, -100};
         int[] arr = new int[]{1, -129};
-        List_234_PalindromeList.ListNode temp = null;
+        ListNode temp = null;
         for (int num : arr) {
             if (temp == null) {
-                temp = new List_234_PalindromeList.ListNode(num);
+                temp = new ListNode(num);
                 data = temp;
             } else {
-                temp.next = new List_234_PalindromeList.ListNode(num);
+                temp.next = new ListNode(num);
                 temp = temp.next;
             }
         }

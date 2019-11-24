@@ -36,12 +36,4 @@ public class List_234_PalindromeList {
         return temp.val;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 }
