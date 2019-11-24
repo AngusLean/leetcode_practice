@@ -1,0 +1,26 @@
+name: leet_code_practice_auto_ci
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - uses: eskatos/gradle-command-action@v1
+      with:
+        arguments: generateReadMeFile
+    - name: action-push
+      uses: ludeeus/action-push@0.0.1
+      env:
+        ACTION_MAIL: "cupofish@gmail.com"
+        ACTION_NAME: "GITHUB ACTION"
+        ACTION_BRANCH: master
+        ACTION_MESSAGE: "Action commit"
+        GITHUB_TOKEN: ${{ secrets.ACTION_SECRET }}

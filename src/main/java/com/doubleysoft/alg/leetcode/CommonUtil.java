@@ -1,5 +1,7 @@
 package com.doubleysoft.alg.leetcode;
 
+import com.doubleysoft.alg.leetcode.list.ListNode;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -65,4 +67,5 @@ public class CommonUtil {
             }
         }
     }
+
 }
