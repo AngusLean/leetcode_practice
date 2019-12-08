@@ -1,6 +1,5 @@
 package com.doubleysoft.alg.leetcode.list;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -30,6 +29,7 @@ public class List_234_PalindromeListTest {
 
     @Test
     public void isPalindrome() {
-        Assert.assertTrue(List_234_PalindromeList.isPalindrome(data));
+        System.out.println(Math.pow(2, 16));
+
     }
 }
