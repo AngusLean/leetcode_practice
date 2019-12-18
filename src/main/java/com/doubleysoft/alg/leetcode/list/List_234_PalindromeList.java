@@ -6,7 +6,7 @@ package com.doubleysoft.alg.leetcode.list;
 public class List_234_PalindromeList {
     public boolean isPalindrome(ListNode head) {
         if (head == null) {
-            return false;
+            return true;
         }
         int len=0;
         ListNode temp = head;
@@ -41,7 +41,7 @@ public class List_234_PalindromeList {
 
     public boolean isPalindrome1(ListNode head) {
         if (head == null) {
-            return false;
+            return true;
         }
         int length = 0;
         ListNode tmp = head;

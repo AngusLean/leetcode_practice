@@ -19,7 +19,7 @@ public class List_234_PalindromeListTest {
     @Before
     public void init() {
         testData = Arrays.asList(
-                new Tuple<>(null, false),
+                new Tuple<>(null, true),
                 new Tuple<>(ListNode.build(0, 0), true),
                 new Tuple<>(ListNode.build(1, 2, 3, 2, 1), true),
                 new Tuple<>(ListNode.build(0), true),
