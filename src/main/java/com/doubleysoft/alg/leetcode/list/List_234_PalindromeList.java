@@ -4,7 +4,10 @@ package com.doubleysoft.alg.leetcode.list;
  * @see <a href="https://leetcode.com/problems/palindrome-linked-list/">234. Palindrome Linked List</a>
  */
 public class List_234_PalindromeList {
-    public static boolean isPalindrome(ListNode head) {
+    public boolean isPalindrome(ListNode head) {
+        if (head == null) {
+            return false;
+        }
         int len=0;
         ListNode temp = head;
         while(temp != null){
@@ -26,7 +29,7 @@ public class List_234_PalindromeList {
         return true;
     }
 
-    private static int getValInPos(ListNode head, int index){
+    private int getValInPos(ListNode head, int index) {
         ListNode temp = head;
         int crt = 0;
         while (crt != index){
@@ -36,12 +39,53 @@ public class List_234_PalindromeList {
         return temp.val;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
+    public boolean isPalindrome1(ListNode head) {
+        if (head == null) {
+            return false;
         }
+        int length = 0;
+        ListNode tmp = head;
+        while (tmp != null) {
+            length++;
+            tmp = tmp.next;
+        }
+        if (length == 1) {
+            return true;
+        }
+
+        ListNode middle = head;
+        int md = length % 2 == 0 ? length / 2 : length / 2 + 1;
+        for (int i = 0; i < md; i++) {
+            middle = middle.next;
+        }
+        ListNode newHead = reverseNode(head, length / 2);
+        for (int i = 0; i < length / 2; i++) {
+            if (newHead != null && middle != null) {
+                if (newHead.val != middle.val)
+                    return false;
+                newHead = newHead.next;
+                middle = middle.next;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private ListNode reverseNode(ListNode head, int len) {
+        ListNode crt = null;
+        ListNode tmp = head;
+        ListNode newHead = null;
+        int num = 0;
+        while (num < len) {
+            if (++num >= len) {
+                newHead = tmp;
+            }
+            ListNode next = tmp.next;
+            tmp.next = crt;
+            crt = tmp;
+            tmp = next;
+        }
+        return newHead;
     }
 }
