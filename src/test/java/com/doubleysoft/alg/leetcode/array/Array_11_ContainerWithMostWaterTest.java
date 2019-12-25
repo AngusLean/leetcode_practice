@@ -9,8 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author dongyang.yu
- * @email dongyang.yu@anxincloud.com
  */
 public class Array_11_ContainerWithMostWaterTest {
     private static List<Array_11_ContainerWithMostWaterTestData> testData = new ArrayList<Array_11_ContainerWithMostWaterTestData>() {{
