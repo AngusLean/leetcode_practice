@@ -17,7 +17,7 @@ jobs:
       with:
         arguments: generateReadMeFile
     - name: Commit files
-        run:
+        run:|
           - git config --local user.email "cupofish@gmail.com"
           - git config --local user.name "GITHUB ACTION"
           - git commit -m "github action automic" -a
