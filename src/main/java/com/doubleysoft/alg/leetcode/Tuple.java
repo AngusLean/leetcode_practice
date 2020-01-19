@@ -21,5 +21,8 @@ public class Tuple<K, V> {
         return v;
     }
 
-
+    @Override
+    public String toString() {
+        return "[" + k.toString() + ", " + v.toString() + "]";
+    }
 }
