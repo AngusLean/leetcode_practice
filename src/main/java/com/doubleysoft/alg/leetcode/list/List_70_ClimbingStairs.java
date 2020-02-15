@@ -44,6 +44,15 @@ public class List_70_ClimbingStairs {
     }
 
     private int _climbStairs1(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        }
+        if (n == 2) {
+            return 2;
+        }
         int f = 2, g = 1;
         while (n-- > 1) {
             f = f + g;
