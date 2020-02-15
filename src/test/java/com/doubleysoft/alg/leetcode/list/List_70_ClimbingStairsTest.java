@@ -21,7 +21,7 @@ public class List_70_ClimbingStairsTest {
             add(new Tuple<>(2, 2));
             add(new Tuple<>(3, 3));
             add(new Tuple<>(1, 1));
-            add(new Tuple<>(45, 1));
+            add(new Tuple<>(45, 1836311903));
         }};
     }
 
@@ -29,7 +29,8 @@ public class List_70_ClimbingStairsTest {
     public void climbStairs() {
         testData.forEach(row -> {
             System.out.println("test row: " + row);
-            Assert.assertTrue(row.getSecound() == list_70_climbingStairs.climbStairs(row.getFirst()));
+            int rs = list_70_climbingStairs.climbStairs(row.getFirst());
+            Assert.assertTrue(row.getSecound() == rs);
         });
     }
 }

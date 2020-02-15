@@ -26,13 +26,29 @@ package com.doubleysoft.alg.leetcode.list;
  */
 public class List_70_ClimbingStairs {
     public int climbStairs(int n) {
-        return _climbStairs(n);
+        return _climbStairs1(n);
+//        return _climbStairs(n);
     }
 
+    /**
+     * 就是斐波那契数列
+     *
+     * @param n
+     * @return
+     */
     private int _climbStairs(int n) {
         if (n <= 1) {
             return 1;
         }
         return _climbStairs(n - 1) + _climbStairs(n - 2);
+    }
+
+    private int _climbStairs1(int n) {
+        int f = 2, g = 1;
+        while (n-- > 1) {
+            f = f + g;
+            g = f - g;
+        }
+        return g;
     }
 }
