@@ -1,8 +1,8 @@
-package com.doubleysoft.alg;
+package com.doubleysoft.alg.jzoffer;
 
-import com.doubleysoft.alg.jzoffer.QA_24_ReverseList;
+import com.doubleysoft.alg.ListNode;
+import com.doubleysoft.alg.ListNodeTestUtil;
 import com.doubleysoft.alg.leetcode.Tuple;
-import com.doubleysoft.alg.leetcode.list.ListNodeTestUtil;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,6 +19,7 @@ public class QA_24_ReverseListTest {
         testData = new ArrayList<Tuple<ListNode, ListNode>>() {{
             add(new Tuple<>(ListNode.build(1, 2, 3, 4, 5), ListNode.build(5, 4, 3, 2, 1)));
             add(new Tuple<>(ListNode.build(1), ListNode.build(1)));
+            add(new Tuple<>(null, null));
         }};
     }
 
