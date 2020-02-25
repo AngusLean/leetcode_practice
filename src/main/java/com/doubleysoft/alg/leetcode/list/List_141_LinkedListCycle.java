@@ -1,5 +1,7 @@
 package com.doubleysoft.alg.leetcode.list;
 
+import com.doubleysoft.alg.ListNode;
+
 /**
  * @see <a href="https://leetcode.com/problems/linked-list-cycle/">141. Linked List Cycle</a>
  */

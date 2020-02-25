@@ -1,5 +1,7 @@
 package com.doubleysoft.alg.leetcode.list;
 
+import com.doubleysoft.alg.ListNode;
+
 /**
  * @see <a href="https://leetcode.com/problems/palindrome-linked-list/">234. Palindrome Linked List</a>
  */

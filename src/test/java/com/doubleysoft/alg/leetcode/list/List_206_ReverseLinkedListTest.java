@@ -1,5 +1,6 @@
 package com.doubleysoft.alg.leetcode.list;
 
+import com.doubleysoft.alg.ListNode;
 import com.doubleysoft.alg.leetcode.Tuple;
 import org.junit.Before;
 import org.junit.Test;

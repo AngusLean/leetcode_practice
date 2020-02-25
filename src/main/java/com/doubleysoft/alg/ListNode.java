@@ -1,10 +1,10 @@
-package com.doubleysoft.alg.leetcode.list;
+package com.doubleysoft.alg;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 

@@ -1,5 +1,6 @@
 package com.doubleysoft.alg.leetcode.list;
 
+import com.doubleysoft.alg.ListNode;
 import org.junit.Assert;
 
 public class ListNodeTestUtil {

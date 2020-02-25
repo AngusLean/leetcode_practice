@@ -1,14 +1,12 @@
 package com.doubleysoft.alg.leetcode.list;
 
-import com.doubleysoft.alg.leetcode.CommonUtil;
+import com.doubleysoft.alg.ListNode;
 import com.doubleysoft.alg.leetcode.Tuple3;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * @author dongyang.yu

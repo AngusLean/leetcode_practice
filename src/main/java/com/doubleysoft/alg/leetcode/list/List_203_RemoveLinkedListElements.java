@@ -1,5 +1,7 @@
 package com.doubleysoft.alg.leetcode.list;
 
+import com.doubleysoft.alg.ListNode;
+
 /**
  * 203. Remove Linked List Elements
  * Remove all elements from a linked list of integers that have value val.

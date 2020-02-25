@@ -1,5 +1,7 @@
 package com.doubleysoft.alg.leetcode.list;
 
+import com.doubleysoft.alg.ListNode;
+
 /**
  * @see <a href="https://leetcode.com/problems/rotate-list/">61. Rotate List</a></a>
  */

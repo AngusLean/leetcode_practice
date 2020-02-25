@@ -1,5 +1,7 @@
 package com.doubleysoft.alg.leetcode.list;
 
+import com.doubleysoft.alg.ListNode;
+
 /**
  * Given a linked list, remove the n-th node from the end of list and return its head.
  * <p>
