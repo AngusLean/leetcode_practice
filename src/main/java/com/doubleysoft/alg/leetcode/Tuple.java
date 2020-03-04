@@ -5,8 +5,8 @@ package com.doubleysoft.alg.leetcode;
  * 9/7/19 18:05
  */
 public class Tuple<K, V> {
-    private K k;
-    private V v;
+    protected K k;
+    protected V v;
 
     public Tuple(K k, V v) {
         this.k = k;
@@ -23,6 +23,6 @@ public class Tuple<K, V> {
 
     @Override
     public String toString() {
-        return "[" + k.toString() + ", " + v.toString() + "]";
+        return "[" + k == null ? "null" : k.toString() + ", " + v == null ? "null" : v.toString() + "]";
     }
 }
