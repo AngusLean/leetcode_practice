@@ -23,6 +23,20 @@ public class Tuple<K, V> {
 
     @Override
     public String toString() {
-        return "[" + k == null ? "null" : k.toString() + ", " + v == null ? "null" : v.toString() + "]";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        if (k != null) {
+            sb.append(k.toString());
+        } else {
+            sb.append("null");
+        }
+        sb.append(", ");
+        if (v != null) {
+            sb.append(v.toString());
+        } else {
+            sb.append("null");
+        }
+        sb.append("]");
+        return sb.toString();
     }
 }
