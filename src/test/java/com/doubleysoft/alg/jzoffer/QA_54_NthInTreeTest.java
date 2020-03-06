@@ -19,11 +19,10 @@ public class QA_54_NthInTreeTest {
         testData = new ArrayList<Tuple3<BinaryTreeNode, Integer, BinaryTreeNode>>() {{
             add(new Tuple3<>(
                     new BinaryTreeNode(5,
-                            new BinaryTreeNode(3,
-                                    new BinaryTreeNode(2), new BinaryTreeNode(4)),
-                            new BinaryTreeNode(7,
-                                    new BinaryTreeNode(6), new BinaryTreeNode(8))), 5,
-                    new BinaryTreeNode(7)));
+                            new BinaryTreeNode(3, new BinaryTreeNode(2), new BinaryTreeNode(4)),
+                            new BinaryTreeNode(7, new BinaryTreeNode(6), new BinaryTreeNode(8))),
+                    5,
+                    new BinaryTreeNode(6)));
         }};
     }
 
@@ -31,8 +30,13 @@ public class QA_54_NthInTreeTest {
     public void nthInTree() {
         testData.forEach(row -> {
             System.out.println(row);
-            BinaryTreeNode binaryTreeNode = qa_54_nthInTree.nthInTree(row.getFirst(), row.getSecound());
+            BinaryTreeNode binaryTreeNode = qa_54_nthInTree.nthInTree1(row.getFirst(), row.getSecound());
             Assert.assertTrue(binaryTreeNode.getVal() == row.getThird().getVal());
         });
+    }
+
+    @Test
+    public void testPrint() {
+        qa_54_nthInTree.middleSortPrint(testData.get(0).getFirst());
     }
 }
