@@ -32,6 +32,7 @@
 |[31. Next Permutation](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/array/Array_31_NextPermutation.java)|https://leetcode.com/problems/next-permutation/ |
 |[119. Pascal's Triangle II](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/array/Array_119_PascalsTriangleII.java)|https://leetcode.com/problems/pascals-triangle-ii/ |
 |[11. Container With Most Water](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/array/Array_11_ContainerWithMostWater.java)|https://leetcode.com/problems/container-with-most-water/ |
+|[268. Missing Number](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/array/Array_268_MissingNumber.java)|https://leetcode.com/problems/missing-number/ |
 |[347. Top K Frequent Elements](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/heap/QA_347_TopKFrequentElements.java)|https://leetcode.com/problems/top-k-frequent-elements/ |
 |[9. Palindrome Number](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/math/Math_9_PalindromeNumber.java)|https://leetcode.com/problems/palindrome-number/submissions/ |
 |[21. Merge Two Sorted Lists](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/list/List_21_MergeTwoSortedLists.java)|https://leetcode.com/problems/merge-two-sorted-lists/ |
