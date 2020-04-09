@@ -22,6 +22,7 @@ public class CommonUtil {
         return result;
     }
 
+
     public static <T> void testListEqualNoOrders(List<List<T>> data1, List<List<T>> data2, Comparator<T> comparator) {
         for (List<T> t1 : data1) {
             boolean notEqual = false;
