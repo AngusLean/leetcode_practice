@@ -17,7 +17,9 @@
 |题目名称及解法|Tag及LeetCode链接|
 |---|----|
 |[3. longest-substring-without-repeating-characters](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/strings/String_3_LongestSubstringTest.java)|[strings](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+|[1450. Number of Students Doing Homework at a Given Time](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/strings/String_1450_NumberofStudentsDoingHomeworkataGivenTime.java)|[strings](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) |
 |[28. Implement strStr()](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/strings/String_28_strStr.java)|[strings](https://leetcode.com/problems/implement-strstr/submissions/) |
+|[1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/strings/String_1442_CountTripletsXOR.java)|[strings](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) |
 |[38. Count and Say](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/strings/String_38_CountAndSay.java)|[strings](https://leetcode.com/problems/count-and-say/) |
 |[13. Roman to Integer](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/strings/String_13_RomantoInteger.java)|[strings](https://leetcode.com/problems/roman-to-integer/) |
 |[9. Palindrome Number](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/math/Math_9_PalindromeNumber.java)|[math](https://leetcode.com/problems/palindrome-number/submissions/) |
