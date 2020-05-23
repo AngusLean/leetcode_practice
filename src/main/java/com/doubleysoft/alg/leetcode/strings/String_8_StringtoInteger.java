@@ -1,6 +1,6 @@
 package com.doubleysoft.alg.leetcode.strings;
 
-public class String_8StringtoInteger {
+public class String_8_StringtoInteger {
     public int myAtoi(String str) {
         if (str == null || str.trim().length() == 0) {
             return 0;

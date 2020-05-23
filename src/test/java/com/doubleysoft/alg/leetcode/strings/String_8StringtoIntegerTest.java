@@ -10,11 +10,11 @@ import java.util.List;
 
 public class String_8StringtoIntegerTest {
     private static List<Tuple<String, Integer>> testData;
-    private String_8StringtoInteger string_8StringtoInteger;
+    private String_8_StringtoInteger string_8StringtoInteger;
 
     @Before
     public void setUp() throws Exception {
-        string_8StringtoInteger = new String_8StringtoInteger();
+        string_8StringtoInteger = new String_8_StringtoInteger();
         testData = Arrays.asList(
                 new Tuple<>("  123", 123),
                 new Tuple<>("  123abc", 123),
