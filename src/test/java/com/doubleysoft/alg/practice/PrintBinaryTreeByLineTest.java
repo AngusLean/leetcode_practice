@@ -18,10 +18,10 @@ public class PrintBinaryTreeByLineTest {
 
     @Test
     public void ttt() throws Exception {
-        System.out.println(Math.floor(3 / 2));
+        //System.out.println(Math.floor(3 / 2));
         HeapSort heapSort = new HeapSort();
         int[] result = heapSort.sort(new int[]{3, 5, 1, 6});
-        System.out.println(result);
+        //System.out.println(result);
     }
 
     public static class HeapSort {

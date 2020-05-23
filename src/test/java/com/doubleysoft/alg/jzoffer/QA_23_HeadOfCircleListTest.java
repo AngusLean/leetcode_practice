@@ -32,7 +32,7 @@ public class QA_23_HeadOfCircleListTest {
     @Test
     public void entryNodeOfLoop() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             ListNode listNode = qa_23_headOfCircleList.entryNodeOfLoop(row.getFirst());
             Assert.assertTrue(row.getSecound() == listNode);
         });

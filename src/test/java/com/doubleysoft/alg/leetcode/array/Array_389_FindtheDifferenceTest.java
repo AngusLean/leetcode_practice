@@ -23,7 +23,7 @@ public class Array_389_FindtheDifferenceTest {
     @Test
     public void findTheDifference() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             char result = Array_389_FindtheDifference.findTheDifference(row.getFirst(), row.getSecound());
             Assert.assertEquals(row.getThird().charValue(), result);
         });

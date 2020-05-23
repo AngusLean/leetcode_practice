@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class Array_39_CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        System.out.println("=====================================================");
+        //System.out.println("=====================================================");
         List<List<Integer>> result = new ArrayList<>();
         combinationSum(result, new ArrayList<>(), 0, candidates, target);
         return result;
@@ -39,11 +39,11 @@ public class Array_39_CombinationSum {
             return;
         }
         for (int i = index; i < candidates.length; i++) {
-            System.out.println(String.format("开始第%d次循环，内循环为:%d.　当前结果为%s", i, index, path.toString()));
+//            System.out.println(String.format("开始第%d次循环，内循环为:%d.　当前结果为%s", i, index, path.toString()));
             List<Integer> temp = new ArrayList<>(path);
             temp.add(candidates[i]);
             combinationSum(result, temp, i, candidates, target - candidates[i]);
-            System.out.println("+++++++++++++++++");
+//            System.out.println("+++++++++++++++++");
         }
     }
 }

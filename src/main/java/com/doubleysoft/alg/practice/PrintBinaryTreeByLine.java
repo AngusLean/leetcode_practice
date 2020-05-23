@@ -32,7 +32,7 @@ public class PrintBinaryTreeByLine {
                 next++;
             }
             if (current == 0) {
-                System.out.println();
+                //System.out.println();
                 current = next;
                 next = 0;
             }

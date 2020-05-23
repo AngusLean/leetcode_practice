@@ -17,7 +17,7 @@ public class Array_136_SingleNumberTest {
     @Test
     public void singleNumber() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             int result = Array_136_SingleNumber.singleNumber(row.getFirst());
             Assert.assertEquals(row.getSecound().intValue(), result);
         });
@@ -26,7 +26,7 @@ public class Array_136_SingleNumberTest {
     @Test
     public void dsfs() {
         int a = 3;
-        System.out.println(a & (~a));
-        System.out.println(0 & (~a));
+        //System.out.println(a & (~a));
+        //System.out.println(0 & (~a));
     }
 }

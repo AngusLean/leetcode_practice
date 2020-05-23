@@ -28,6 +28,6 @@ public class Array_15_3SumTest {
         }
         List<List<Integer>> lists = Array_15_3Sum.threeSum(arr);
 
-        System.out.println(lists);
+        //System.out.println(lists);
     }
 }

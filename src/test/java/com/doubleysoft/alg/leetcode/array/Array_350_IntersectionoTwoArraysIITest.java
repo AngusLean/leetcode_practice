@@ -8,6 +8,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Array_350_IntersectionoTwoArraysIITest {
     private List<Tuple3<int[], int[], int[]>> testData;
 
@@ -16,6 +17,10 @@ public class Array_350_IntersectionoTwoArraysIITest {
         testData = new ArrayList<Tuple3<int[], int[], int[]>>() {{
             add(new Tuple3<>(new int[]{1, 2, 2, 1}, new int[]{2, 2}, new int[]{2, 2}));
             add(new Tuple3<>(new int[]{4, 9, 5}, new int[]{9, 4, 9, 8, 4}, new int[]{4, 9}));
+            add(new Tuple3<>(new int[]{1}, new int[]{1, 1}, new int[]{1}));
+            add(new Tuple3<>(new int[]{1, 1}, new int[]{1}, new int[]{1}));
+            add(new Tuple3<>(new int[]{}, new int[]{}, new int[]{}));
+            add(new Tuple3<>(new int[]{1, 1}, new int[]{1, 1}, new int[]{1, 1}));
         }};
     }
 

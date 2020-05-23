@@ -27,7 +27,7 @@ public class String_28_strStrTest {
     @Test
     public void strStr() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             int result = string_28_strStr.strStr(row.getFirst(), row.getSecound());
             Assert.assertTrue(row.getThird() == result);
         });

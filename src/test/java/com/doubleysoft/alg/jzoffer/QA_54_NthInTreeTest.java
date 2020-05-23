@@ -29,7 +29,7 @@ public class QA_54_NthInTreeTest {
     @Test
     public void nthInTree() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             BinaryTreeNode binaryTreeNode = qa_54_nthInTree.nthInTree1(row.getFirst(), row.getSecound());
             Assert.assertTrue(binaryTreeNode.getVal() == row.getThird().getVal());
         });

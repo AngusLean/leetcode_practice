@@ -22,7 +22,7 @@ public class Math_204_CountPrimesTest {
     @Test
     public void countPrimes() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             int result = Math_204_CountPrimes.countPrimes1(row.getFirst());
             Assert.assertEquals(row.getSecound().intValue(), result);
         });

@@ -25,7 +25,7 @@ public class QA_25_MergeSortedListTest {
     @Test
     public void mergeSortedList() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             ListNode result = qa_25_mergeSortedList.mergeSortedList(row.getFirst(), row.getSecound());
             ListNodeTestUtil.assertEqual(row.getThird(), result);
         });

@@ -24,7 +24,7 @@ public class Array_268_MissingNumberTest {
     @Test
     public void testMissInt() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             int result = Array_268_MissingNumber.missingNumber(row.getFirst());
             Assert.assertEquals(row.getSecound().intValue(), result);
         });

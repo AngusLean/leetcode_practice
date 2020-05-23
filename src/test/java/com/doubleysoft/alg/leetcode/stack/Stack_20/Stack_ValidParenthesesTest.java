@@ -35,7 +35,7 @@ public class Stack_ValidParenthesesTest {
     @Test
     public void isValid() {
         testData.forEach(row -> {
-            System.out.println("开始测试: " + row);
+            //System.out.println("开始测试: " + row);
             Assert.assertEquals(row.getSecound(), stack_validParentheses.isValid(row.getFirst()));
         });
     }

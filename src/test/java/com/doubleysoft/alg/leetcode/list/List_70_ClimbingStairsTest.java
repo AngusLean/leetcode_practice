@@ -28,7 +28,7 @@ public class List_70_ClimbingStairsTest {
     @Test
     public void climbStairs() {
         testData.forEach(row -> {
-            System.out.println("test row: " + row);
+            //System.out.println("test row: " + row);
             int rs = list_70_climbingStairs.climbStairs(row.getFirst());
             Assert.assertTrue(row.getSecound() == rs);
         });

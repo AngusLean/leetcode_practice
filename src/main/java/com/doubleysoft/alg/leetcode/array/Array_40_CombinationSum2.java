@@ -28,10 +28,10 @@ public class Array_40_CombinationSum2 {
     private Map<List<Integer>, Boolean> markedPath = new HashMap<>();
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        System.out.println("=====================================================");
+        //System.out.println("=====================================================");
         List<List<Integer>> result = new ArrayList<>();
         combinationSum(result, new ArrayList<>(), 0, candidates, target);
-        System.out.println(result);
+        //System.out.println(result);
         return result;
     }
 

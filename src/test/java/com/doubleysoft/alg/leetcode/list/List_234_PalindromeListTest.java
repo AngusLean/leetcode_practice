@@ -40,7 +40,7 @@ public class List_234_PalindromeListTest {
     @Test
     public void isPalindrome1() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             Assert.assertEquals(list_234_palindromeList.isPalindrome1(row.getFirst()), row.getSecound());
         });
     }

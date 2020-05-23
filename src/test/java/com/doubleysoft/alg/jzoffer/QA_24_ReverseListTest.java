@@ -26,7 +26,7 @@ public class QA_24_ReverseListTest {
     @Test
     public void reverseList() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             ListNode result = qa_24_reverseList.reverseList(row.getFirst());
             ListNodeTestUtil.assertEqual(row.getSecound(), result);
         });

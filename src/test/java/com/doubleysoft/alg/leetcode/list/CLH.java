@@ -17,15 +17,15 @@ public class CLH implements Lock {
                 @Override
                 public void run() {
                     try {
-                        System.out.println(Thread.currentThread() + "开始获取锁");
+                        //System.out.println(Thread.currentThread() + "开始获取锁");
                         clh.lock();
-                        System.out.println(Thread.currentThread() + "获取锁");
-                        System.out.println("get lock");
+                        //System.out.println(Thread.currentThread() + "获取锁");
+                        //System.out.println("get lock");
 
                     } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
-                        System.out.println(Thread.currentThread() + "释放锁");
+                        //System.out.println(Thread.currentThread() + "释放锁");
                         clh.unlock();
                     }
                 }

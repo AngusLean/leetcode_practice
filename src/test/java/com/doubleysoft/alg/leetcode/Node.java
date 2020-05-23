@@ -19,8 +19,8 @@ public class Node {
         Node n2 = n1;
 
         n1.n = n1 = new Node(nn, 3);
-        System.out.println(n1.toString() + n1.n.toString());
-        System.out.println(n2.toString() + n2.n.toString());
+        //System.out.println(n1.toString() + n1.n.toString());
+        //System.out.println(n2.toString() + n2.n.toString());
     }
 
     @Override

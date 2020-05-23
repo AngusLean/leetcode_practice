@@ -7,11 +7,11 @@ import static com.doubleysoft.alg.leetcode.CommonUtil.swap;
 public class QuickSort implements Sort {
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort();
-        System.out.println(quickSort.randomSelect(1, 5));
-        System.out.println(quickSort.randomSelect(1, 5));
-        System.out.println(quickSort.randomSelect(1, 5));
-        System.out.println(quickSort.randomSelect(1, 5));
-        System.out.println(quickSort.randomSelect(1, 5));
+        //System.out.println(quickSort.randomSelect(1, 5));
+        //System.out.println(quickSort.randomSelect(1, 5));
+        //System.out.println(quickSort.randomSelect(1, 5));
+        //System.out.println(quickSort.randomSelect(1, 5));
+        //System.out.println(quickSort.randomSelect(1, 5));
     }
 
     @Override

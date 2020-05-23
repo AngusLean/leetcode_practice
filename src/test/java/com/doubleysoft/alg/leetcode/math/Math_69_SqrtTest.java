@@ -26,7 +26,7 @@ public class Math_69_SqrtTest {
     @Test
     public void mySqrt() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             Assert.assertTrue(row.getSecound() == math_69_sqrt.mySqrt(row.getFirst()));
         });
     }

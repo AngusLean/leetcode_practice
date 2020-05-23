@@ -22,7 +22,7 @@ public class String_3_LongestSubstringTestTest {
     @Test
     public void lengthOfLongestSubstring() {
         testData.entrySet().forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             Assert.assertEquals(row.getValue().longValue(), String_3_LongestSubstringTest.longestPalindrome(row.getKey()).length());
         });
     }

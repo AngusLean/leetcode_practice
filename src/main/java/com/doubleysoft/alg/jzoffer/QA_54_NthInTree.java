@@ -64,7 +64,7 @@ public class QA_54_NthInTree {
         if (root.getLeft() != null) {
             middleSortPrint(root.getLeft());
         }
-        System.out.println(root.getVal());
+        //System.out.println(root.getVal());
         if (root.getRight() != null) {
             middleSortPrint(root.getRight());
         }

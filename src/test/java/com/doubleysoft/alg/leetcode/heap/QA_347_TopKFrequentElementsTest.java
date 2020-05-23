@@ -19,7 +19,7 @@ public class QA_347_TopKFrequentElementsTest {
     @Test
     public void topKFrequent() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             List<Integer> result = QA_347_TopKFrequentElements.topKFrequent(row.getFirst(), row.getSecound());
             Integer[] expectArr = CommonUtil.intArr2IntegerArr(row.getThird());
             Integer[] actualResult = result.toArray(new Integer[]{});
@@ -30,7 +30,7 @@ public class QA_347_TopKFrequentElementsTest {
     @Test
     public void topKFrequent1() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             List<Integer> result = QA_347_TopKFrequentElements.topKFrequent1(row.getFirst(), row.getSecound());
             Integer[] expectArr = CommonUtil.intArr2IntegerArr(row.getThird());
             Integer[] actualResult = result.toArray(new Integer[]{});

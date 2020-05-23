@@ -27,7 +27,7 @@ public class String_38_CountAndSayTest {
     @Test
     public void strStr() {
         testData.forEach(row -> {
-            System.out.println(row);
+            //System.out.println(row);
             String result = string_38_countAndSay.countAndSay(row.getFirst());
             Assert.assertEquals(row.getSecound(), result);
         });
