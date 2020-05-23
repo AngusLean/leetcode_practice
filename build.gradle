@@ -30,13 +30,15 @@ task generateReadMeFile(){
     }
     def githubFilePath = "https://github.com/AngusLean/leetcode_practice/blob/master/"
     fileTree("src/main/java").each{file ->
+        def parentFileName = file.getParentFile().getName()
         file.eachLine {line ->
             if(line.contains("@see <a href=")){
                 def url = line.find(Pattern.compile("\"(.*)\"")).replaceAll("\"","")
                 def name = line.find(Pattern.compile("\\>(.*?)<")).replaceAll("<","").replaceAll(">","")
                 def rootIdx = file.getAbsolutePath().indexOf("src/main/java")
                 def relativePath = file.getAbsolutePath().substring(rootIdx)
-                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|"+url+" |\n")
+//                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|"+url+" |\n")
+                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|["+parentFileName+"]("+url+") |\n")
             }
         }
     }
