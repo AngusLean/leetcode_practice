@@ -14,13 +14,6 @@ public class ListNodeTestUtil {
         }
     }
 
-    public static void main(String[] args) {
-        //System.out.println(sumOfStrNum("11", "99"));
-        //System.out.println(sumOfStrNum("1", "99"));
-        //System.out.println(sumOfStrNum("0", "1099"));
-        //System.out.println(sumOfStrNum("11", "1099"));
-        //System.out.println(sumOfStrNum("9000", "1099"));
-    }
 
     public static String sumOfStrNum(String str1, String str2) {
         int len1 = str1.length(), len2 = str2.length();
