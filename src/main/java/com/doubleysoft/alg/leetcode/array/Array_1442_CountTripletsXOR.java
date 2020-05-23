@@ -1,4 +1,4 @@
-package com.doubleysoft.alg.leetcode.strings;
+package com.doubleysoft.alg.leetcode.array;
 
 /**
  * Given an array of integers arr.
@@ -27,7 +27,7 @@ package com.doubleysoft.alg.leetcode.strings;
  *
  * @see <a href="https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/">1442. Count Triplets That Can Form Two Arrays of Equal XOR</a>
  */
-public class String_1442_CountTripletsXOR {
+public class Array_1442_CountTripletsXOR {
     //O n*3, 空间O1
     public int countTriplets(int[] arr) {
         int num = 0;

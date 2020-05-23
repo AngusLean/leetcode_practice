@@ -1,4 +1,4 @@
-package com.doubleysoft.alg.leetcode.strings;
+package com.doubleysoft.alg.leetcode.array;
 
 /**
  * Given two integer arrays startTime and endTime and given an integer queryTime.
@@ -25,7 +25,7 @@ package com.doubleysoft.alg.leetcode.strings;
  *
  * @see <a href="https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/">1450. Number of Students Doing Homework at a Given Time</a>
  */
-public class String_1450_NumberofStudentsDoingHomeworkataGivenTime {
+public class Array_1450_NumberofStudentsDoingHomeworkataGivenTime {
     public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
         if (startTime.length != endTime.length) {
             return 0;
