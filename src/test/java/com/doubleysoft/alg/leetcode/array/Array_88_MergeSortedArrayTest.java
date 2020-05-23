@@ -3,6 +3,7 @@ package com.doubleysoft.alg.leetcode.array;
 import lombok.Builder;
 import lombok.Getter;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.List;
  * @author dongyang.yu
  * @email dongyang.yu@anxincloud.com
  */
+@Ignore
 public class Array_88_MergeSortedArrayTest {
     private static List<Array_88_MergeSortedArrayData> dataList;
 

@@ -13,7 +13,7 @@
 
 ## 题目列表
 
-|题目及解法|LeetCode链接|
+|题目名称及解法|Tag及LeetCode链接|
 |---|----|
 |[61. Rotate List](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/list/List_61_RotateList.java)|[list](https://leetcode.com/problems/rotate-list/) |
 |[876. Middle of the Linked List](https://github.com/AngusLean/leetcode_practice/blob/master/src/main/java/com/doubleysoft/alg/leetcode/list/List_876_MiddleoftheLinkedList.java)|[list](https://leetcode.com/problems/middle-of-the-linked-list/) |
