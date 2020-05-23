@@ -24,4 +24,19 @@ public class ArrayUtilTest {
             }
         }
     }
+
+    public static void testIntArrEqual(int[] arr1, int[] arr2) {
+        for (int int1 : arr1) {
+            boolean isMatch = false;
+            for (int int2 : arr2) {
+                if (int1 == int2) {
+                    isMatch = true;
+                    break;
+                }
+            }
+            if (!isMatch) {
+                throw new RuntimeException("list don't equal");
+            }
+        }
+    }
 }
