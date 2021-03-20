@@ -1,6 +1,7 @@
-package com.doubleysoft.alg.leetcode.strings;
+package com.doubleysoft.alg.leetcode.dp;
 
 import com.doubleysoft.alg.leetcode.Tuple;
+import com.doubleysoft.alg.leetcode.strings.String_8_StringtoInteger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +9,7 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
-public class String_8StringtoIntegerTest {
+public class DP_8_StringtoIntegerTest {
     private static List<Tuple<String, Integer>> testData;
     private String_8_StringtoInteger string_8StringtoInteger;
 
