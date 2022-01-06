@@ -25,7 +25,7 @@ public class String_76_MinimumWindowSubstring {
             right++;
             if(need.containsKey(r)){
                 window.put(r, window.getOrDefault(r, 0)+1);
-                if(window.get(r) == need.get(r)){
+                if(window.get(r).equals(need.get(r))){
                     valid++;
                 }
             }
@@ -37,7 +37,7 @@ public class String_76_MinimumWindowSubstring {
                 Character l = s.charAt(left);
                 left++;
                 if(need.containsKey(l)){
-                    if(window.get(l) == need.get(l)){
+                    if(window.get(l).equals(need.get(l))){
                         valid--;
                     }
                     window.put(l, window.get(l)-1);
