@@ -24,11 +24,16 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
 
     testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    // https://mvnrepository.com/artifact/junit/junit
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-    testCompile 'junit:junit:4.12'
+//    testCompile 'junit:junit:4.12'
 }
 
-
+tasks.withType(JavaCompile){
+    options.encoding = 'UTF-8'
+}
 task generateReadMeFile(){
     def readMeTpl = file("README_TPL.md")
     def readme = file("README.md")
@@ -37,17 +42,17 @@ task generateReadMeFile(){
         readme.append(line+"\n")
     }
     def githubFilePath = "https://github.com/AngusLean/leetcode_practice/blob/master/"
-    fileTree("src/main/java").each{file ->
-        def parentFileName = file.getParentFile().getName()
-        file.eachLine {line ->
-            if(line.contains("@see <a href=")){
-                def url = line.find(Pattern.compile("\"(.*)\"")).replaceAll("\"","")
-                def name = line.find(Pattern.compile("\\>(.*?)<")).replaceAll("<","").replaceAll(">","")
-                def rootIdx = file.getAbsolutePath().indexOf("src/main/java")
-                def relativePath = file.getAbsolutePath().substring(rootIdx)
-//                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|"+url+" |\n")
-                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|["+parentFileName+"]("+url+") |\n")
-            }
-        }
-    }
+//    fileTree("src/main/java").each{file ->
+//        def parentFileName = file.getParentFile().getName()
+//        file.eachLine {line ->
+//            if(line.contains("@see <a href=")){
+//                def url = line.find(Pattern.compile("\"(.*)\"")).replaceAll("\"","")
+//                def name = line.find(Pattern.compile("\\>(.*?)<")).replaceAll("<","").replaceAll(">","")
+//                def rootIdx = file.getAbsolutePath().indexOf("src/main/java")
+//                def relativePath = file.getAbsolutePath().substring(rootIdx)
+////                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|"+url+" |\n")
+//                readme.append("|"+"["+name+"]("+(githubFilePath+relativePath)+")|["+parentFileName+"]("+url+") |\n")
+//            }
+//        }s
+//    }
 }
